@@ -1,0 +1,58 @@
+.cargo-map-container {
+  background-color: white;
+  border-radius: 8px;
+  padding: 1.5rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-bottom: 2rem;
+}
+
+.cargo-map-container h3 {
+  color: #2c3e50;
+  margin-bottom: 1rem;
+}
+
+.cargo-map {
+  width: 100%;
+  height: 400px;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.map-legend {
+  display: flex;
+  gap: 2rem;
+  margin-top: 1rem;
+  padding-top: 1rem;
+  border-top: 1px solid #eee;
+}
+
+.legend-item {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.legend-color {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+}
+
+.legend-color.blue {
+  background-color: #3498db;
+}
+
+.legend-color.green {
+  background-color: #2ecc71;
+}
+
+@media (max-width: 768px) {
+  .cargo-map {
+    height: 300px;
+  }
+
+  .map-legend {
+    flex-direction: column;
+    gap: 1rem;
+  }
+} 
